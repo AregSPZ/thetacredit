@@ -1,0 +1,194 @@
+RandomForestClassifier (grid search)
+# forest_clf = RandomForestClassifier(random_state=42, max_features=10, n_estimators=30, n_jobs=-1)   # best hyperparameters from grid search
+
+Accuracy (cross_val_predict): 0.935926949048496
+Precision: 0.9682835820895522
+Recall: 0.7302145620823074
+F1 Score: 0.8325646681371566
+Confusion Matrix:
+ [[0.99332614 0.00667386]
+ [0.26978544 0.73021456]]
+
+
+
+
+
+
+Threshold: 0.0 Precision: 0.21815531000613875 Recall: 1.0 F1 Score: 0.35817322834645665
+Threshold: 0.01111111111111111 Precision: 0.30310407790626903 Recall: 0.9634189236721773 F1 Score: 0.46113051896123575
+Threshold: 0.016666666666666666 Precision: 0.30315439955727724 Recall: 0.9634189236721773 F1 Score: 0.46118875231520456
+Threshold: 0.03333333333333333 Precision: 0.3031711771542421 Recall: 0.9634189236721773 F1 Score: 0.461208166701747
+Threshold: 0.05555555555555555 Precision: 0.3756996103436061 Recall: 0.932641575800211 F1 Score: 0.5356295136609261
+Threshold: 0.058333333333333334 Precision: 0.3757262292758963 Recall: 0.932641575800211 F1 Score: 0.5356565656565656
+Threshold: 0.06666666666666667 Precision: 0.37568199532346064 Recall: 0.9324657052409426 F1 Score: 0.5355826051820799
+Threshold: 0.075 Precision: 0.44363636363636366 Recall: 0.9011607456911713 F1 Score: 0.5945695056857739
+Threshold: 0.09166666666666666 Precision: 0.4436747770369729 Recall: 0.9011607456911713 F1 Score: 0.5946040034812882
+Threshold: 0.1 Precision: 0.4436650212176323 Recall: 0.900984875131903 F1 Score: 0.5945569546799745
+Threshold: 0.12222222222222222 Precision: 0.5107278513499641 Recall: 0.8749560323601829 F1 Score: 0.6449730991119467
+Threshold: 0.13333333333333333 Precision: 0.5107802874743327 Recall: 0.8749560323601829 F1 Score: 0.6450149098923895
+Threshold: 0.14444444444444446 Precision: 0.5755344418052256 Recall: 0.8522687302145621 F1 Score: 0.687083510562881
+Threshold: 0.16666666666666666 Precision: 0.575602803183276 Recall: 0.8522687302145621 F1 Score: 0.6871322226160936
+Threshold: 0.18333333333333332 Precision: 0.6363636363636364 Recall: 0.8334505803728456 F1 Score: 0.7216934439960404
+Threshold: 0.1888888888888889 Precision: 0.6365345869711215 Recall: 0.8334505803728456 F1 Score: 0.7218033660802681
+Threshold: 0.2 Precision: 0.6366200967221923 Recall: 0.8334505803728456 F1 Score: 0.7218583396801217
+Threshold: 0.20833333333333334 Precision: 0.6945068103577309 Recall: 0.8160393950052761 F1 Score: 0.7503840866822997
+Threshold: 0.21111111111111114 Precision: 0.6946107784431138 Recall: 0.8160393950052761 F1 Score: 0.7504447679120169
+Threshold: 0.21666666666666667 Precision: 0.6947147776613265 Recall: 0.8160393950052761 F1 Score: 0.7505054589567326
+Threshold: 0.23333333333333334 Precision: 0.6948188080263552 Recall: 0.8160393950052761 F1 Score: 0.7505661598188288
+Threshold: 0.24166666666666667 Precision: 0.7441860465116279 Recall: 0.7991558213155118 F1 Score: 0.7706919945725915
+Threshold: 0.25 Precision: 0.7441441441441441 Recall: 0.7989799507562434 F1 Score: 0.7705877364091256
+Threshold: 0.26666666666666666 Precision: 0.7442660550458715 Recall: 0.7989799507562434 F1 Score: 0.7706530958439355
+Threshold: 0.26999999999999996 Precision: 0.7892970681737902 Recall: 0.7859655293703834 F1 Score: 0.7876277758195277
+Threshold: 0.27777777777777773 Precision: 0.7894364953188483 Recall: 0.7859655293703834 F1 Score: 0.7876971886842338
+Threshold: 0.2833333333333333 Precision: 0.7895759717314488 Recall: 0.7859655293703834 F1 Score: 0.7877666137845937
+Threshold: 0.3 Precision: 0.7897154974377099 Recall: 0.7859655293703834 F1 Score: 0.787836051123843
+Threshold: 0.3333333333333333 Precision: 0.8256880733944955 Recall: 0.775589166373549 F1 Score: 0.7998549016051509
+Threshold: 0.3444444444444444 Precision: 0.8578720062819003 Recall: 0.768554344002814 F1 Score: 0.8107606679035251
+Threshold: 0.36666666666666664 Precision: 0.858040447673277 Recall: 0.768554344002814 F1 Score: 0.8108358845904073
+Threshold: 0.3777777777777778 Precision: 0.885954135954136 Recall: 0.7609919099542737 F1 Score: 0.818732261116367
+Threshold: 0.3944444444444445 Precision: 0.8861355723940201 Recall: 0.7609919099542737 F1 Score: 0.8188097265588041
+Threshold: 0.4 Precision: 0.8863170831626382 Recall: 0.7609919099542737 F1 Score: 0.81888720666162
+Threshold: 0.43333333333333335 Precision: 0.9102891156462585 Recall: 0.7530777347871966 F1 Score: 0.8242540904716074
+Threshold: 0.45555555555555555 Precision: 0.9280402449693789 Recall: 0.7462187829757299 F1 Score: 0.8272567751998441
+Threshold: 0.4666666666666667 Precision: 0.9282432728068256 Recall: 0.7462187829757299 F1 Score: 0.8273374280978842
+Threshold: 0.48888888888888893 Precision: 0.9436840924388602 Recall: 0.7397115722827998 F1 Score: 0.8293404318249039
+Threshold: 0.5 Precision: 0.9436714542190305 Recall: 0.7395357017235314 F1 Score: 0.8292250049299941
+Threshold: 0.515 Precision: 0.9547221587011205 Recall: 0.7342595849454802 F1 Score: 0.8301023958644
+Threshold: 0.5333333333333333 Precision: 0.9549405306495883 Recall: 0.7342595849454802 F1 Score: 0.8301849274209585
+Threshold: 0.5394444444444445 Precision: 0.960993731135361 Recall: 0.7279282448118185 F1 Score: 0.8283798659061342
+Threshold: 0.5666666666666667 Precision: 0.9612169066418951 Recall: 0.7279282448118185 F1 Score: 0.828462770216173
+Threshold: 0.6 Precision: 0.9691037735849056 Recall: 0.7226521280337671 F1 Score: 0.8279266572637517
+Threshold: 0.6333333333333333 Precision: 0.9749343518739556 Recall: 0.7182553640520577 F1 Score: 0.8271392405063291
+Threshold: 0.6666666666666666 Precision: 0.9777938691769249 Recall: 0.7124516355962012 F1 Score: 0.8242954522331876
+Threshold: 0.7 Precision: 0.9838354151359294 Recall: 0.7064720365810764 F1 Score: 0.8223973794656567
+Threshold: 0.7333333333333333 Precision: 0.9875992063492064 Recall: 0.7003165670066831 F1 Score: 0.8195101872813336
+Threshold: 0.7666666666666667 Precision: 0.9899623588456713 Recall: 0.6938093563137531 F1 Score: 0.8158411746458485
+Threshold: 0.8 Precision: 0.9926246185147508 Recall: 0.6864227928244812 F1 Score: 0.8116032439176544
+Threshold: 0.8333333333333334 Precision: 0.994328435163702 Recall: 0.6783327470981357 F1 Score: 0.8064819654992158
+Threshold: 0.8666666666666667 Precision: 0.9958126144988223 Recall: 0.6691874780161801 F1 Score: 0.8004628168717787
+Threshold: 0.8933333333333333 Precision: 0.9973397180101091 Recall: 0.6593387266971509 F1 Score: 0.793859184753838
+Threshold: 0.9 Precision: 0.9973390101117616 Recall: 0.6591628561378825 F1 Score: 0.793731469716222
+Threshold: 0.9333333333333333 Precision: 0.998636487592037 Recall: 0.6440379880408019 F1 Score: 0.7830642574575003
+Threshold: 0.9666666666666667 Precision: 0.9991477272727273 Recall: 0.6185367569468871 F1 Score: 0.7640669128829025
+Threshold: 1.0 Precision: 0.9996878901373284 Recall: 0.5633134013366162 F1 Score: 0.7205849268841394
+
+
+
+
+
+
+
+
+
+
+# get the data from the form
+        first_name = form.first_name.data
+        last_name = form.last_name.data
+        age = form.age.data
+        annual_income = form.annual_income.data
+        employment_length = form.employment_length.data
+        loan_amount = form.loan_amount.data
+        loan_percent_income = loan_amount / annual_income
+        home_ownership = form.home_ownership.data
+        loan_intent = loan_type
+        q1 = int(form.q1.data)
+        q2 = int(form.q2.data)
+        q3 = int(form.q3.data)
+        q4 = int(form.q4.data)
+        q5 = int(form.q5.data)
+        if age < 25 and loan_type == 'education':
+            student = 1
+        else:
+            student = 0
+
+        # make lists from one hot encoded data
+        home_ownership = [0, 0, 0, 0]
+        if home_ownership == 'RENT':
+            home_ownership[3] = 1
+        elif home_ownership == 'OWN':
+            home_ownership[2] = 1
+        elif home_ownership == 'MORTGAGE':
+            home_ownership[0] = 1
+        else:
+            home_ownership[1] = 1
+
+        loan_intent = [0, 0, 0, 0]
+        if loan_type == 'debt-consolidation':
+            loan_intent[0] = 1
+        elif loan_type == 'education':
+            loan_intent[1] = 1
+        elif loan_type == 'house':
+            loan_intent[2] = 1
+        elif loan_type == 'medical':
+            loan_intent[3] = 1
+
+        
+
+        points = q1 + q2 + q3 + q4 + q5
+        loan_grade = [0, 0, 0, 0, 0, 0, 0]
+
+        if points >= 18:
+            loan_grade[0] = 1
+        elif points >= 15:
+            loan_grade[1] = 1
+        elif points >= 12:
+            loan_grade[2] = 1
+        elif points >= 9:
+            loan_grade[3] = 1
+        elif points >= 6:
+            loan_grade[4] = 1
+        elif points >= 3:
+            loan_grade[5] = 1
+        else:
+            loan_grade[6] = 1
+
+        # Define the base path for the training directory
+        base_path = os.path.join(os.path.dirname(__file__), 'training')
+
+        # Load models using joblib
+        forest_clf = joblib.load(os.path.join(base_path, 'models', 'forest_clf.pkl'))
+        forest_reg = joblib.load(os.path.join(base_path, 'models', 'forest_reg.pkl'))
+
+        # Load variables using joblib
+        age_mean = joblib.load(os.path.join(base_path, 'variables', 'age_mean.pkl'))
+        age_std = joblib.load(os.path.join(base_path, 'variables', 'age_std.pkl'))
+        annual_income_mean = joblib.load(os.path.join(base_path, 'variables', 'income_mean.pkl'))
+        annual_income_std = joblib.load(os.path.join(base_path, 'variables', 'income_std.pkl'))
+        employment_length_mean = joblib.load(os.path.join(base_path, 'variables', 'emp_length_mean.pkl'))
+        employment_length_std = joblib.load(os.path.join(base_path, 'variables', 'emp_length_std.pkl'))
+        loan_percent_income_mean = joblib.load(os.path.join(base_path, 'variables', 'percent_income_mean.pkl'))
+        loan_percent_income_std = joblib.load(os.path.join(base_path, 'variables', 'percent_income_std.pkl'))
+        interest_mean = joblib.load(os.path.join(base_path, 'variables', 'interest_mean.pkl'))
+        interest_std = joblib.load(os.path.join(base_path, 'variables', 'interest_std.pkl'))
+        threshold_1 = joblib.load(os.path.join(base_path, 'variables', 'threshold_1.pkl'))
+        threshold_2 = joblib.load(os.path.join(base_path, 'variables', 'threshold_2.pkl'))
+        high_risk_amnt = joblib.load(os.path.join(base_path, 'variables', 'high_risk_amnt.pkl'))
+        high_risk_percent_income = joblib.load(os.path.join(base_path, 'variables', 'high_risk_percent_income.pkl'))
+
+
+        # scale the data
+        age = (age - age_mean) / age_std
+        annual_income = (annual_income - annual_income_mean) / annual_income_std
+        employment_length = (employment_length - employment_length_mean) / employment_length_std
+        loan_percent_income = (loan_percent_income - loan_percent_income_mean) / loan_percent_income_std
+
+        # prepare the data for status
+        input_data = [[age, annual_income, employment_length, loan_percent_income, home_ownership[0], home_ownership[1], home_ownership[2], home_ownership[3], loan_intent[0], loan_intent[1], loan_intent[2], loan_intent[3], loan_grade[0], loan_grade[1], loan_grade[2], loan_grade[3], loan_grade[4], loan_grade[5], loan_grade[6], student]]
+
+
+       # Predict using the classifier and apply the appropriate threshold
+        probas = forest_clf.predict_proba(input_data)[0] # extract the one and only row of 2d array which contains 2 values: probability of class 0 and probability of class 1
+
+
+        # if the loan is high risk, use the threshold_2, otherwise use threshold_1
+        if loan_amount > high_risk_amnt or loan_percent_income > high_risk_percent_income: 
+            if probas[1] >= threshold_2:    # probas[1] is the probability of positive class 1 (the loan defaulting)
+                status = 'rejected'
+            else:
+                status = 'approved'
+
+        else:
+            if probas[1] >= threshold_1:
+                status = 'rejected'
+            else:
+                status = 'approved'

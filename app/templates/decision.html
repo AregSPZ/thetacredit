@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h2 class="text-center">{{ title }}</h2> 
+    <br>
+
+    {% if status == 'approved' %}
+    <div class="container slightly-green">
+    <p class="text-center">Dear {{ name }},
+    we're happy to inform you that your loan application has passed. You will receive an email with further instructions.</p>
+    </div>
+
+    {% else %}
+    <div class="container slightly-red">
+    <p class="text-center">Dear {{ name }}, 
+    we're sorry to inform you that your loan application has been declined. Please contact us if you think this was a mistake.</p>
+    </div>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('loan', loan_type=loan_type) }}" class="btn btn-primary">Apply for another loan</a>
+    <a href="{{ url_for('home') }}" class="btn btn-secondary float-right">Back to home</a>
+</div>
+{% endblock %}
+
+
+

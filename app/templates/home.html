@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <main>
+        <section>
+            <h1>Welcome!</h1>
+            <p class="paragraph">We offer loans to our clients for their various needs. Please choose your intents and let's get started. </p>
+        </section>
+    </main>
+    <br>
+    <h3>Our services include:</h3>
+    <section class="loan-types">
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan', loan_type='personal') }}"> <!-- This is the link to the loan page, the value of loan_type variable is passed to the app.route and function call, the 'loan' is about the route (function) name -->
+                <img src="/static/images/personal.jpg" alt="Personal Loan">
+                <h2>Personal Loan</h2>
+            </a>
+        </div>
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan', loan_type='house') }}">
+                <img src="/static/images/home_improvement.jpg" alt="Home Loan">
+                <h2>House Loan</h2>
+            </a>
+        </div>
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan',loan_type='debt-consolidation') }}">
+                <img src="/static/images/debt_consolidation.jpg" alt="Debt Consolidation Loan">
+                <h2>Debt Consolidation Loan</h2>
+            </a>
+        </div>
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan', loan_type='education') }}">
+                <img src="/static/images/education.jpg" alt="Education Loan">
+                <h2>Education Loan</h2>
+            </a>
+        </div>
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan', loan_type='medical') }}">
+                <img src="/static/images/medical.jpg" alt="Medical Loan">
+                <h2>Medical Loan</h2>
+            </a>
+        </div>
+        
+        <div class="loan-type">
+            <a class="loan-link" href="{{ url_for('loan', loan_type='venture') }}">
+                <img src="/static/images/venture.jpg" alt="Venture Loan">
+                <h2>Venture Loan</h2>
+            </a>
+        </div>
+    </section>
+
+
+
+    
+{% endblock %}

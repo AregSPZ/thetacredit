@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">{{ title }}</h2>
+    <p class="text-center">Based on the input, your loan will have an interest rate of {{ interest_rate }}%.</p>
+    <p class="text-center">Do you want to proceed with this loan?</p>
+    <div class="text-center">
+        <a href="{{ url_for('decision', loan_type=loan_type, status = 'approved', name=name)}}" class="btn btn-success">Accept</a>
+        <a href="{{ url_for('home') }}" class="btn btn-danger">Decline</a>
+    </div>
+</div>
+{% endblock %}

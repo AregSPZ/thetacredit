@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #312a2a;
+
+    background-image: url('../static/images/theta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-size: 100% 100%;
+
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.loan-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.loan-type {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.loan-type img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.loan-type h3 {
+    margin-top: 10px;
+}
+
+.paragraph {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+.upper-link {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.loan-link {
+    color: #333;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* make the loan type links black */
+.loan-type a {
+    color: #333 !important;
+}
+
+.slightly-red{
+    background-color: #ff6868;
+}
+
+.slightly-green{
+    background-color: #68ff68;
+}
