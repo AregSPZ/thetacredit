@@ -1,6 +1,31 @@
 import os, joblib
 
+
 def process_form_data(form, loan_type):
+
+
+    """
+Process form data and generate prediction for credit risk assessment.
+Args:
+    form (object): The form object containing user input data.
+    loan_type (str): The type of loan.
+Returns:
+    dict: A dictionary containing processed form data for credit risk assessment.
+        - 'first_name' (str): First name of the applicant.
+        - 'last_name' (str): Last name of the applicant.
+        - 'age' (int): Age of the applicant.
+        - 'annual_income' (float): Annual income of the applicant.
+        - 'employment_length' (int): Employment length of the applicant.
+        - 'loan_amount' (float): Loan amount requested by the applicant.
+        - 'loan_percent_income' (float): Loan amount as a percentage of annual income.
+        - 'home_ownership' (list): One-hot encoded representation of home ownership.
+        - 'loan_intent' (list): One-hot encoded representation of loan intent.
+        - 'loan_grade' (list): One-hot encoded representation of loan grade.
+        - 'student' (int): Indicator variable for student status.
+Raises:
+    None
+"""
+
 
     first_name = form.first_name.data
     last_name = form.last_name.data
@@ -78,6 +103,30 @@ def process_form_data(form, loan_type):
 
 
 def get_prediction(data):
+        
+        
+        """
+        Predicts the loan approval status and interest rate based on the given data.
+        Parameters:
+        data (dict): A dictionary containing the input data for prediction. It should have the following keys:
+            - 'age' (float): The age of the applicant.
+            - 'annual_income' (float): The annual income of the applicant.
+            - 'employment_length' (float): The length of employment in years.
+            - 'loan_percent_income' (float): The loan amount as a percentage of the annual income.
+            - 'home_ownership' (list): A list of binary values representing the home ownership status. 
+                                       The list should have 4 elements, where each element represents a specific home ownership status.
+            - 'loan_intent' (list): A list of binary values representing the loan intent. 
+                                   The list should have 5 elements, where each element represents a specific loan intent.
+            - 'loan_grade' (list): A list of binary values representing the loan grade. 
+                                  The list should have 7 elements, where each element represents a specific loan grade.
+            - 'student' (int): A binary value representing whether the applicant is a student or not.
+        Returns:
+        tuple: A tuple containing the loan approval status and interest rate.
+            - The loan approval status can be either 'approved' or 'rejected'.
+            - The interest rate is a float value.
+        """
+        
+
     
         # Define the base path for the training directory
         base_path = os.path.join(os.path.dirname(__file__), '..', 'training')

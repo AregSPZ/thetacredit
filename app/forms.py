@@ -1,5 +1,24 @@
+"""
+This module contains the LoanForm class, which is a FlaskForm used for capturing loan application data.
+Attributes:
+    first_name (StringField): Field for capturing the first name of the applicant.
+    last_name (StringField): Field for capturing the last name of the applicant.
+    age (IntegerField): Field for capturing the age of the applicant.
+    loan_amount (IntegerField): Field for capturing the loan amount requested by the applicant.
+    annual_income (IntegerField): Field for capturing the annual income of the applicant.
+    employment_length (IntegerField): Field for capturing the length of employment of the applicant.
+    home_ownership (SelectField): Field for selecting the type of home ownership of the applicant.
+    q1 (SelectField): Field for selecting the response to the question "How do you typically handle your monthly bills?".
+    q2 (SelectField): Field for selecting the response to the question "If you unexpectedly received a large medical bill or had an emergency expense, how would you cover it?".
+    q3 (SelectField): Field for selecting the response to the question "What is your approach to managing credit card debt?".
+    q4 (SelectField): Field for selecting the response to the question "How do you handle new loan opportunities?".
+    q5 (SelectField): Field for selecting the response to the question "How often do you review your credit report or track your credit score?".
+    submit (SubmitField): Field for submitting the loan application form.
+"""
+
+
+
 from flask_wtf import FlaskForm
-from flask_wtf.csrf import CSRFProtect
 from wtforms import IntegerField, SelectField, SubmitField, StringField
 from wtforms.validators import DataRequired, NumberRange, Length, InputRequired
 

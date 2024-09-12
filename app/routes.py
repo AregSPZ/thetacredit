@@ -1,3 +1,14 @@
+"""
+This module contains the routes for the Credit Risk Assessment Tool.
+Routes:
+- `/`: Renders the home page template with the title 'Home'.
+- `/loan/<loan_type>`: Renders the loan page template with a loan form. Processes the form data and redirects to the interest_rate or decision route based on the prediction result.
+- `/interest_rate`: Renders the interest_rate page template with the loan type, interest rate, title, and name parameters.
+- `/decision`: Renders the decision page template with the loan status, loan type, title, and name parameters.
+"""
+
+
+
 from flask import render_template, redirect, url_for, request  # Import necessary Flask functions and classes
 from app import app  # Import the Flask application instance
 from app.forms import LoanForm  # Import the LoanForm class from the forms module
