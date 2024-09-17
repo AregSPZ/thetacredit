@@ -34,8 +34,8 @@ class LoanForm(FlaskForm):
     home_ownership = SelectField('Home Ownership', choices=[('', 'Select an option'),('RENT', 'Rent'), ('OWN', 'Own'), ('MORTGAGE', 'Mortgage'), ('OTHER', 'Other')], validators=[DataRequired()]) # choices is a list of tuples, with the first element being the value and the second being the label, the label is what the user sees, the value is what the program sees
 
     def validate_employment_length(form, field): # custom validator
-        if field.data > form.age.data - 16: # assuming the applicant started working at 16 at the earliest
-            raise ValidationError('Invalid employment length.')
+        if field.data > form.age.data - 16: # assuming the applicant can't work before the age of 16
+            raise ValidationError('Invalid employment length')
 
     q1 = SelectField('How do you typically handle your monthly bills?', choices=[('', 'Select an option'),
         (4, 'I pay all of them on time, without reminders.'),
