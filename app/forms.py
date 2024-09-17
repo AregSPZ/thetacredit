@@ -20,7 +20,7 @@ Attributes:
 
 from flask_wtf import FlaskForm
 from wtforms import IntegerField, SelectField, SubmitField, StringField
-from wtforms.validators import DataRequired, NumberRange, Length, InputRequired
+from wtforms.validators import DataRequired, NumberRange, Length, InputRequired, ValidationError
 
 
 class LoanForm(FlaskForm):
@@ -32,6 +32,10 @@ class LoanForm(FlaskForm):
     annual_income = IntegerField('Annual Income (USD)', validators=[DataRequired(), NumberRange(min=4000, max=500000)]) 
     employment_length = IntegerField('Employment Length', validators=[DataRequired(), NumberRange(min=1, max=60)])
     home_ownership = SelectField('Home Ownership', choices=[('', 'Select an option'),('RENT', 'Rent'), ('OWN', 'Own'), ('MORTGAGE', 'Mortgage'), ('OTHER', 'Other')], validators=[DataRequired()]) # choices is a list of tuples, with the first element being the value and the second being the label, the label is what the user sees, the value is what the program sees
+
+    def validate_employment_length(form, field): # custom validator
+        if field.data > form.age.data - 16: # assuming the applicant started working at 16 at the earliest
+            raise ValidationError('Invalid employment length.')
 
     q1 = SelectField('How do you typically handle your monthly bills?', choices=[('', 'Select an option'),
         (4, 'I pay all of them on time, without reminders.'),
