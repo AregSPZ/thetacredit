@@ -12,4 +12,4 @@ The primary goal is to accurately assess credit risk to make informed loan appro
 Random Forest for both classification and regression (Scikit-learn's RandomForestClassifier and RandomForestRegressor respectively).
 
 # Results
-Around 90% F1 macro score for classifier and 0.4 Root Mean Squared Error for regressor (with target variable and predictions being normalized).
+Around 90% F1 macro score for classifier, which implies that the model is capable of accurately make loan decisions within the limits of training data (35000USD or lower loans), and 0.4 Root Mean Squared Error for regressor (with target variable and predictions being normalized).
