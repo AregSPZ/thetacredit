@@ -13,3 +13,7 @@ Random Forest for both classification and regression (Scikit-learn's RandomFores
 
 # Results
 Around 90% F1 macro score for classifier, which implies that the model is capable of accurately making loan decisions within the limits of training data (35000$ or lower loans), and 0.4 Root Mean Squared Error for regressor (with target variable and predictions being normalized).
+
+# Deployment
+
+Docker was used to containerize the web application, allowing it to be easily deployed across various environments. By using Docker, the application and its dependencies are packaged into a single container, ensuring consistency and preventing issues caused by differences in development and production environments. 
